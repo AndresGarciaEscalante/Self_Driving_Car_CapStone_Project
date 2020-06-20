@@ -50,7 +50,7 @@ class WaypointUpdater(object):
 
         # Replaces the rospy.spin() because it allows to control the frequency rate for publishing messages 
     def loop(self):
-        rate = rospy.Rate(50)
+        rate = rospy.Rate(10)
         while not rospy.is_shutdown():
             if self.pose and self.base_lane:
                 #Get closest waypoint
