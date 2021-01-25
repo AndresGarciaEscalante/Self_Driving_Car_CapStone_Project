@@ -79,4 +79,4 @@ The `/current_pose` topic provides the vehicle's current position, and `/base_wa
 ## Project Outcome
 The car was able to complete drive autonomously without breaking any of the restrictions.  
 
-**IMPORTANT** Check the full video of the self-driving car navigating in the simulated environment [Self_Driving_Car Capstone Project]().
+**IMPORTANT** Check the full video of the self-driving car navigating in the simulated environment [Self_Driving_Car Capstone Project](https://youtu.be/7ZxXdt_zD98).
