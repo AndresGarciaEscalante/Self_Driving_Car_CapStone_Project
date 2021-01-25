@@ -1,7 +1,7 @@
 # Self_Driving_Car Capstone Project 
 
 <p align="center">
-  <img src="CarND-Capstone/gif/simulator.gif">
+  <img src="CarND-Capstone/gif/Simulator.gif">
 </p>
 
 ## Team Members
@@ -46,7 +46,7 @@ Implement a safe autonomous navigation in a simulated 3D environment. In the sim
 The **System Architecture** of the project consists of three main subsystems (Perception, Planning, and Control). The nodes `waypoint_updater.py`, `dbw_node.py`, and `traffic_light_detection_node.py` were implemented to provide a safe autonomous navigation in the environment. 
 
 <p align="center">
-  <img width= 500 src="CarND-Capstone/imgS/system_architecture.png">
+  <img width= 500 src="CarND-Capstone/imgs/system_architecture.png">
 </p>
 
 The aforementioned nodes are described in more detail in the following subsections:
@@ -55,14 +55,14 @@ The aforementioned nodes are described in more detail in the following subsectio
 This package contains the waypoint updater node: `waypoint_updater.py`. The purpose of this node is to update the target velocity property of each waypoint based on traffic light and obstacle detection data. This node will subscribe to the `/base_waypoints`, `/current_pose`, `/obstacle_waypoint`, and `/traffic_waypoint` topics, and publish a list of waypoints ahead of the car with target velocities to the `/final_waypoints` topic.
 
 <p align="center">
-  <img width= 500 src="CarND-Capstone/imgS/waypoint-updater-ros-graph.png">
+  <img width= 500 src="CarND-Capstone/imgs/waypoint-updater-ros-graph.png">
 </p>
 
 ### Drive-By-Wire (DBW)
 The project is equipped with a drive-by-wire (dbw) system, meaning the throttle, brake, and steering have electronic control. This package contains the files that are responsible for control of the vehicle: the node `dbw_node.py` and the file `twist_controller.py`, along with a pid and lowpass filter. The dbw_node subscribes to the `/current_velocity` topic along with the `/twist_cmd` topic to receive target linear and angular velocities. Additionally, this node will subscribe to `/vehicle/dbw_enabled`, which indicates if the car is under dbw or driver control. This node will **publish throttle, brake, and steering commands** to the `/vehicle/throttle_cmd`, `/vehicle/brake_cmd`, and `/vehicle/steering_cmd` topics.
 
 <p align="center">
-  <img width= 500 src="CarND-Capstone/imgS/dbw-node-ros-graph.png">
+  <img width= 500 src="CarND-Capstone/imgs/dbw-node-ros-graph.png">
 </p>
 
 ### Traffic Light Detection
