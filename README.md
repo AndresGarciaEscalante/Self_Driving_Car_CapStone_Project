@@ -46,7 +46,7 @@ Implement a safe autonomous navigation in a simulated 3D environment. In the sim
 The **System Architecture** of the project consists of three main subsystems (Perception, Planning, and Control). The nodes `waypoint_updater.py`, `dbw_node.py`, and `traffic_light_detection_node.py` were implemented to provide a safe autonomous navigation in the environment. 
 
 <p align="center">
-  <img width= 500 src="CarND-Capstone/imgs/system_architecture.png">
+  <img width= 650 src="CarND-Capstone/imgs/system_architecture.png">
 </p>
 
 The aforementioned nodes are described in more detail in the following subsections:
@@ -71,7 +71,7 @@ This package contains the traffic light detection node: `tl_detector.py`. This n
 The `/current_pose` topic provides the vehicle's current position, and `/base_waypoints` provides a complete list of waypoints the car will be following. The **Traffic light detection** is implemented in the `tl_detector.py`, whereas traffic light classification in `../tl_detector/light_classification_model/tl_classfier.py`.
 
 <p align="center">
-  <img width= 500 src="CarND-Capstone/imgS/tl-detector-ros-graph.png">
+  <img width= 500 src="CarND-Capstone/imgs/tl-detector-ros-graph.png">
 </p>
 
 **IMPORTANT:** Please refer to the following repository for more detailed information of the **Detection and Classification of Traffic Lights** [CarND-Traffic-Light-Classifier](https://github.com/CheloGE/CarND-Traffic-Light-Classifier).
